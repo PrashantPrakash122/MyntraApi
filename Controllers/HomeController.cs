@@ -56,5 +56,12 @@ namespace MyntraApi.Controllers
             return new JsonResult(myntra.GetProducts(id, 1));
         }
 
+        [HttpGet]
+        [Route("{name}")]
+        public IActionResult GetProductByName(string name)
+        {
+            return new JsonResult("Product");
+        }
+
     }
 }
